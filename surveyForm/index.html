@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="header">
+    <header>
+        <h1 id="title">Is Christmas...</h1>
+        <p id="description">We like to know what you think about christmas..!</p>
+    </header>
+</div>
+
+<div class="container">
+    
+
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label" class="lb">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label" class="lb">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label" class="lb">Age</label>
+            <input type="number" min="10" max="80" name="age" id="number" placeholder="Age">
+
+            <label for="dropdown" class="lb">In which of this continents do think is better to spend christmas:</label>
+            <select name="" id="dropdown">
+                <option value="">Europe</option>                    
+                <option value="">North America</option>
+                <option value="">South and Central America</option>
+                <option value="">Africa</option>
+                <option value="">Oceania</option>
+            </select>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend>Is the christmas the best season for you?:</legend>                
+            <label for="r1"><input type="radio" name="group" id="r1" value="yes">Yes, I love it.</label>                
+            <label for="r2"><input type="radio" name="group" id="r2" value="no">No, I'm the grinch!</label>                
+            <label for="r3"><input type="radio" name="group" id="r3" value="maybe">I don't care.</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>With whom do you like spend christmas?:</legend>                
+            <label for="ch1"><input type="checkbox" name="ch1" id="ch1" value="cho">With family.</label>                
+            <label for="ch2"><input type="checkbox" name="ch1" id="ch2" value="cht">With friends.</label>                
+            <label for="ch4"><input type="checkbox" name="ch1" id="ch4" value="chth">Alone!</label>
+        </fieldset>
+
+        <hr>
+
+        <legend style="margin-top: 10px; margin-left: 25px;">Feedback:</legend>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Write any additional thoughts about christmas right here..." style="display: block;"></textarea>
+
+        <input type="submit" value="submit" id="submit">
+        
+    </form>
+</div>
+</body>
+</html>
